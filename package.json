@@ -1,0 +1,28 @@
+{
+  "name": "unicorn-sparkle-icecream-store",
+  "version": "1.0.0",
+  "description": "This is the start of the Unicorn game",
+  "main": "index.js",
+  "scripts": {
+    "test": "superTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rusrap3547/unicorn-sparkle-icecream-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rusrap3547/unicorn-sparkle-icecream-store/issues"
+  },
+  "homepage": "https://github.com/rusrap3547/unicorn-sparkle-icecream-store#readme",
+  "dependencies": {
+    "excaliburjs": "^1.0.7",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "excalibur": "0.30.3",
+    "typescript": "5.8.3",
+    "vite": "7.0.5"
+  }
+}
