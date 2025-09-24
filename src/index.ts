@@ -1,6 +1,7 @@
 // import Excalibur from "excaliburjs";
 import * as ex from "excalibur";
-import * as yuna from "Yuna";
+import Yuna from 'Yuna';
+import YunaSprite from './Yuna';
 console.log("test");
 const SCALE = 2;
 
@@ -12,20 +13,14 @@ const game = new ex.Engine({
 	pixelArt: true
 });
 
-// Create an actor and assign the animation to its graphics
-const yunaActor = new ex.Actor({
-	pos: ex.vec(100, 100), // Set initial position as needed
-	width: 32,
-	height: 32
+// Example: create a new Actor and add it to the game
+// Create a sprite from the Yuna export and add it to an actor
+const yunaActor = new ex.Actor();
+const yunaSprite = new ex.Sprite({
+	image: YunaSprite,
+	destSize: { width: YunaSprite.width, height: YunaSprite.height }
 });
-// Ensure yuna.yunaAnimations.walking is an ex.Animation or ex.Graphic
-// If it's a sprite or frames array, create an Animation first:
-const walkingAnimation = new ex.Animation({
-  frames: yuna.yunaAnimations.walking, // Make sure this is an array of ex.AnimationFrame
-  frameDuration: 100 // Adjust as needed
-});
-yunaActor.graphics.use(walkingAnimation);
-
+yunaActor.graphics.use(yunaSprite);
 game.add(yunaActor);
-
+game.add(Yuna);
 game.start();

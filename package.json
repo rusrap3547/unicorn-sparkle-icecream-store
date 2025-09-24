@@ -20,6 +20,8 @@
 	},
 	"homepage": "https://github.com/rusrap3547/unicorn-sparkle-icecream-store#readme",
 	"dependencies": {
+		"@excaliburjs/plugin-aseprite": "^0.30.2",
+		"@excaliburjs/plugin-ldtk": "^0.30.3",
 		"excaliburjs": "^1.0.7",
 		"tsc": "^2.0.4"
 	},
